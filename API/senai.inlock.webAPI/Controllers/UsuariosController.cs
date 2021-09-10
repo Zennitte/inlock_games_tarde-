@@ -71,7 +71,7 @@ namespace senai.inlock.webAPI.Controllers
             {
                 new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.email),
                 new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.idUsuario.ToString()),
-                new Claim(ClaimTypes.Role, usuarioBuscado.idTipoUsuario.ToString()),
+                new Claim(ClaimTypes.Role, usuarioBuscado.tipoUsuario.titulo),
             };
 
             var Key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("sdajfhajkfsaahvuwafajcabvsafshfsakjfsa"));

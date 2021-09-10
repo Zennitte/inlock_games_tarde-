@@ -51,7 +51,7 @@ namespace senai.inlock.webAPI
                          //validar o tempo de expiracao
                          ValidateLifetime = true,
                          //definindo a chave de seguranca
-                         IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("inlock-chave-autenticacao")),
+                         IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("sdajfhajkfsaahvuwafajcabvsafshfsakjfsa")),
                          //tempo de expiracao do token
                          ClockSkew = TimeSpan.FromMinutes(30),
                          //define o nome de quem emite o token (issue)
@@ -70,17 +70,19 @@ namespace senai.inlock.webAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
-
             app.UseSwagger();
-
-            app.UseAuthorization();
 
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "inlock.webApi");
                 c.RoutePrefix = string.Empty;
             });
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
