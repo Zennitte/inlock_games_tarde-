@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fic\\source\\repos\\senai.inlock.webAPI\\senai.inlock.webAPI\\senai.inlock.webAPI.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\Zennitte\\inlock_games_tarde-\\API\\senai.inlock.webAPI\\senai.inlock.webAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fic\\source\\repos\\senai.inlock.webAPI\\senai.inlock.webAPI\\senai.inlock.webAPI.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\Zennitte\\inlock_games_tarde-\\API\\senai.inlock.webAPI\\senai.inlock.webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fic\\source\\repos\\senai.inlock.webAPI\\senai.inlock.webAPI\\senai.inlock.webAPI.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Zennitte\\inlock_games_tarde-\\API\\senai.inlock.webAPI\\senai.inlock.webAPI.csproj",
         "projectName": "senai.inlock.webAPI",
-        "projectPath": "C:\\Users\\fic\\source\\repos\\senai.inlock.webAPI\\senai.inlock.webAPI\\senai.inlock.webAPI.csproj",
-        "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fic\\source\\repos\\senai.inlock.webAPI\\senai.inlock.webAPI\\obj\\",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\Zennitte\\inlock_games_tarde-\\API\\senai.inlock.webAPI\\senai.inlock.webAPI.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\Zennitte\\inlock_games_tarde-\\API\\senai.inlock.webAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,24 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.12.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
